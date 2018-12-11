@@ -122,13 +122,11 @@ Hex::Hex()
 }
 Hex::Hex(int i)
 {
-	this->decimal = i;
-	this->hex = toHex(i);
+	set(i);
 }
 Hex::Hex(string s)
 {
-	this->hex = s;
-	this->decimal = toDecimal(s);
+	set(s);
 }
 //functions (getters)
 int Hex::getDecimal()
